@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Class Project | Industry Research – Galilea Ticas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --card: #ffffff;
+      --accent: #0f766e;
+      --accent-soft: #d1fae5;
+      --text-main: #111827;
+      --text-muted: #6b7280;
+      --border: #e5e7eb;
+      --shadow-soft: 0 12px 28px rgba(15, 23, 42, 0.12);
+      --radius-lg: 20px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #ecfdf5 0, transparent 55%),
+                  var(--bg);
+      color: var(--text-main);
+      padding: 24px 16px 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 960px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 18px;
+    }
+
+    .title-block h1 {
+      font-family: "Georgia", "Times New Roman", serif;
+      font-size: 24px;
+      letter-spacing: 0.03em;
+    }
+
+    .title-block span {
+      font-size: 13px;
+      color: var(--text-muted);
+      display: block;
+      margin-top: 4px;
+    }
+
+    .back-link {
+      font-size: 13px;
+      text-decoration: none;
+      color: #047857;
+      padding: 6px 12px;
+      border-radius: var(--radius-pill);
+      border: 1px solid #a7f3d0;
+      background: #ecfdf5;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 22px;
+    }
+
+    @media (max-width: 780px) {
+      main {
+        grid-template-columns: minmax(0, 1fr);
+      }
+
+      header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      padding: 20px 22px 24px;
+    }
+
+    .section-heading {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .body-text {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .body-text p + p {
+      margin-top: 10px;
+    }
+
+    .body-text ul {
+      margin-top: 8px;
+      margin-left: 20px;
+    }
+
+    .body-text li {
+      margin-bottom: 4px;
+    }
+
+    .pill-heading {
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+
+    .materials-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .material-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: #f9fafb;
+      font-size: 14px;
+      color: var(--text-main);
+      transition: all 0.15s ease-out;
+    }
+
+    .material-btn span.label {
+      font-weight: 500;
+    }
+
+    .material-btn span.meta {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .material-btn.primary {
+      background: linear-gradient(135deg, #0f766e, #10b981);
+      border-color: transparent;
+      color: #ecfdf5;
+      box-shadow: 0 10px 24px rgba(16, 185, 129, 0.4);
+    }
+
+    .material-btn:hover {
+      transform: translateY(-1px);
+      border-color: #10b981;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="title-block">
+        <h1>AI Class Project</h1>
+        <span>Industry Research Report · Prepared by Galilea Ticas</span>
+      </div>
+      <a href="index.html" class="back-link">&larr; Back to main page</a>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2 class="section-heading">Project Overview</h2>
+        <div class="body-text">
+          <p>
+            For RESECON 490AI, I completed an industry research project that uses data and
+            recent reports to analyze how artificial intelligence and digital tools are
+            transforming a specific industry. The report examines current conditions,
+            employment patterns, and how AI may change the demand for different kinds of work.
+          </p>
+          <p>
+            The goal of the project is to practice reading evidence from multiple sources,
+            interpret simple statistics, and connect them to concepts from AI in Economics:
+            technological change, labor demand and supply, and skill requirements. The
+            written report is the primary deliverable; later in the semester, I may add a
+            short slide deck that summarizes the key points in a more visual format.
+          </p>
+          <p>
+            In class, this project also serves as a way to experiment with AI tools:
+          </p>
+          <ul>
+            <li>Drafting and revising text with AI assistance while keeping final judgment my own.</li>
+            <li>Using AI to help polish the structure and style of the website you are viewing now.</li>
+            <li>Reflecting on where AI is helpful, and where careful human interpretation is still essential.</li>
+          </ul>
+        </div>
+      </section>
+
+      <aside class="card">
+        <div class="pill-heading">Project Materials</div>
+        <div class="materials-list">
+          <a class="material-btn" href="#">
+            <span class="label">Presentation Slides</span>
+            <span class="meta">Coming soon</span>
+          </a>
+          <a class="material-btn primary" href="project.pdf" target="_blank" rel="noreferrer">
+            <span class="label">Industry Research Report (PDF)</span>
+            <span class="meta">Opens project.pdf</span>
+          </a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      This page was created with assistance from AI tools as part of the RESECON 490AI
+      website polishing exercise.
+    </footer>
+  </div>
+</body>
+</html>
